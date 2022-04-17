@@ -10,34 +10,11 @@
 main {
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
-.title {
-  margin: 32px 0;
-  text-align: center;
-  font: normal bold 32px/40px Tahoma, sans-serif;
-  color: #228b22;
-}
-
-@keyframes titleAnimation {
-  from {
-    color: #228b22;
-  }
-  to {
-    color: darkorange;
-
-    transform: scale(-1, 1) translate(-1000px, 50px);
-  }
-}
-
-.title {
-  animation: titleAnimation 2s ease 4s 2 alternate forwards;
-}
 .slide {
   position: relative;
-  margin: 0 auto;
-  border: 4px solid rgba(66, 245, 21, 0.6);
+  margin: 50px auto;
 }
 
 .slide-image {
@@ -56,7 +33,7 @@ main {
   top: 0;
   position: absolute;
   opacity: 0;
-  transition: opacity 1000ms ease;
+  transition: opacity 800ms ease;
 }
 .slide-image .img.active {
   opacity: 1;
@@ -68,7 +45,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  color: rgb(7, 7, 7);
+  color: #ccc;
 }
 
 .slide-btn {
@@ -79,7 +56,7 @@ main {
   text-align: center;
   cursor: pointer;
   opacity: 0;
-  background: rgba(66, 245, 21, 0.6);
+  background: rgba(7, 7, 7, 0.6);
   transition: opacity 0.4s ease;
   display: flex;
   align-items: center;
@@ -125,8 +102,8 @@ main {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: rgba(66, 245, 21, 0.6);
-  color: rgb(14, 13, 13);
+  background: rgba(7, 7, 7, 0.6);
+  color: #ccc;
   text-align: center;
   z-index: 1;
   padding: 7px 0;
